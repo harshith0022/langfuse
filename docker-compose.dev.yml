@@ -1,5 +1,5 @@
 services:
-  clickhouse:
+  qa1-clickhouse:
     image: clickhouse/clickhouse-server:24.3
     user: "101:101"
     environment:
