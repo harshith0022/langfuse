@@ -1,0 +1,40 @@
+fullnameOverride: qa1-langfuse
+
+langfuse:
+  databaseUrl: "postgresql://postgres:postgres@qa1-langfuse-postgresql:5432/postgres"
+  redis:
+    host: "qa1-langfuse-redis"
+    port: 6379
+  salt:
+    secretKeyRef:
+      name: langfuse-secrets
+      key: salt
+  nextauth:
+    secret:
+      secretKeyRef:
+        name: langfuse-secrets
+        key: nextauth_secret
+  clickhouse:
+    enabled: false
+    auth:
+      username: default
+      password: dummy
+    host: qa1-langfuse-clickhouse.qa1.svc.cluster.local
+    port: 9000
+    zookeeper:
+      nodes:
+        - host: qa1-langfuse-zookeeper.qa1.svc.cluster.local
+          port: 2181
+
+postgresql:
+  enabled: false
+redis:
+  enabled: false
+zookeeper:
+  enabled: false
+clickhouse:
+  enabled: false
+
+s3:
+  enabled: true
+  fullnameOverride: qa1-langfuse-s3
