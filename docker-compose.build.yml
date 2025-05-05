@@ -1,5 +1,5 @@
 services:
-  langfuse-web:
+  qa1-langfuse-web:
     build:
       dockerfile: ./web/Dockerfile
       context: .
