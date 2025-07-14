@@ -100,7 +100,7 @@
     "@trpc/server": "^10.45.0",
     "@uiw/codemirror-themes": "^4.23.7",
     "@uiw/react-codemirror": "^4.21.24",
-    "ai": "^3.4.9",
+    "ai": "^4.3.18",
     "bcryptjs": "^2.4.3",
     "bullmq": "^5.34.10",
     "class-variance-authority": "^0.7.0",
